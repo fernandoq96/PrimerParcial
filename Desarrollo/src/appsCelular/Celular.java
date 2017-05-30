@@ -103,9 +103,21 @@ public class Celular extends EjercicioOIA {
 
 	}
 
-	public static void main(String[] args) {
-		Celular celu = new Celular(new File("fatiga.in"), new File("fatiga.out"));
+	public static void main(String[] args) throws IOException {
+		Celular celu = new Celular(new File("fatiga4.in"), new File("fatiga4.out"));
 		celu.resolver();
+		
+//		FileWriter fw = new FileWriter("fatiga4.in");
+//		PrintWriter pw = new PrintWriter(fw);
+//		
+//		int cant = 5000000;
+//		int tam = 5000001;
+//		pw.println(cant + " " + tam);
+//		for (int i = 1; i <= cant; i++) {
+//			pw.println(i);
+//		}
+//		pw.close();
+//		fw.close();
 	}
 
 }
